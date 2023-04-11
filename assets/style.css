@@ -1,4 +1,11 @@
-body{
-    background-color: rgb(66, 66, 66);
-    color: beige;
+body {
+  background-color: rgb(66, 66, 66);
+  color: beige;
+}
+
+hr,
+ul {
+  padding: 0;
+  margin: 0 0 10px 0;
+  list-style-type: none;
 }
