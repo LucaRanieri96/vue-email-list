@@ -1,5 +1,6 @@
 body {
-  background-color: rgb(66, 66, 66);
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, #1F2421 0%, #A6A6A8 100%);
   color: beige;
 }
 
@@ -8,4 +9,10 @@ ul {
   padding: 0;
   margin: 0 0 10px 0;
   list-style-type: none;
+}
+
+.card{
+  background-image: linear-gradient(to bottom right, #7765E3 0%, #4e6fe6 100%);
+  color: #d9d9d9;
+  box-shadow: 0 0 5px rgb(60, 60, 60);
 }
