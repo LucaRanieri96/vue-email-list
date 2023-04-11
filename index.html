@@ -22,7 +22,7 @@
             <h1 class="card-title">10 random emails</h1>
             <h6 class="card-subtitle mb-4 text-body-secondary">Generate 10 random emails every refresh</h6>
             <div class="d-flex justify-content-around mb-4">
-              <button type="button" class="btn btn-light" v-on:click="toggleBtn">Show</button>
+              <button type="button" class="btn btn-light" v-on:click="toggleBtn">Hide/Show</button>
               <button type="button" class="btn btn-dark" v-on:click="refreshList">Refresh</button>
             </div>
             <ul v-for="email in emailList" v-show="emailList.length == 10">
