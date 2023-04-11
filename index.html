@@ -25,10 +25,13 @@
               <button type="button" class="btn btn-light" v-on:click="toggleBtn">Hide/Show</button>
               <button type="button" class="btn btn-dark" v-on:click="refreshList">Refresh</button>
             </div>
-            <ul v-for="email in emailList" v-show="emailList.length == 10">
-              <li v-if="show">{{email}}</li>
-              <hr>
-            </ul>
+            <div v-show="emailList.length == 10">
+              <ul v-if="show">
+                <li v-for="email in emailList" ><strong>{{email}}</strong>
+                  <hr>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
