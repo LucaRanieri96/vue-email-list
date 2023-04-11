@@ -7,6 +7,7 @@ createApp({
       message: "Hello",
       emailApi: "https://flynn.boolean.careers/exercises/api/random/mail",
       emailList: [],
+      show: false,
     };
   },
   methods: {
@@ -20,7 +21,13 @@ createApp({
         });
       }
     },
-    
+    toggleBtn() {
+      this.show = !this.show
+    },
+    refreshList() {
+      this.emailList = [];
+      this.getTenEmails()
+    } 
   },
   mounted() {
     this.getTenEmails();
